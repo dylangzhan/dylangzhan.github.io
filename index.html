@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dinglun (Dylan) Zhang — Frontend, Full-Stack &amp; AI Engineer</title>
+  <meta name="description" content="Dinglun (Dylan) Zhang — Software engineer building polished web &amp; mobile products with React, React Native, Next.js and Flutter, accelerated by agentic AI workflows. USC M.S. Computer Engineering. Los Angeles, CA." />
+  <meta name="keywords" content="Dinglun Zhang, Dylan Zhang, Frontend Engineer, Full-Stack Engineer, AI Engineer, React, React Native, Next.js, Flutter, Expo, Game Developer, Unity, Los Angeles" />
+  <meta name="author" content="Dinglun Zhang" />
+  <link rel="canonical" href="https://dylangzhan.github.io/" />
+  <meta name="theme-color" content="#07070a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dylangzhan.github.io/" />
+  <meta property="og:title" content="Dinglun (Dylan) Zhang — Frontend, Full-Stack & AI Engineer" />
+  <meta property="og:description" content="I build polished web & mobile products with React, React Native, Next.js & Flutter — at AI speed." />
+  <meta property="og:image" content="https://dylangzhan.github.io/assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dinglun (Dylan) Zhang — Frontend, Full-Stack & AI Engineer" />
+  <meta name="twitter:description" content="I build polished web & mobile products with React, React Native, Next.js & Flutter — at AI speed." />
+  <meta name="twitter:image" content="https://dylangzhan.github.io/assets/og.jpg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=7" />
+  <script>document.documentElement.classList.remove("no-js")</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dinglun Zhang",
+    "alternateName": "Dylan Zhang",
+    "jobTitle": "Software Engineer",
+    "url": "https://dylangzhan.github.io/",
+    "email": "mailto:dinglunz@usc.edu",
+    "address": { "@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Southern California" },
+      { "@type": "CollegeOrUniversity", "name": "Rutgers University–New Brunswick" }
+    ],
+    "knowsAbout": ["React", "React Native", "Next.js", "Flutter", "Expo", "AI agents", "LangChain", "Unity", "Game development"],
+    "sameAs": ["https://www.linkedin.com/in/dinglun-zhang", "https://github.com/dinglunz"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="bg-aurora" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="Dylan Zhang — home">
+        <span class="brand-mark">DZ</span>
+        <span class="brand-name">Dylan Zhang</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#stack">Stack</a>
+        <a href="#ai">AI</a>
+        <a href="#experience">Experience</a>
+        <a href="#games">Games</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="kbd-btn" type="button" data-open-palette aria-label="Open command menu">
+          <span class="kbd-desktop"><kbd>⌘</kbd><kbd>K</kbd></span>
+          <span class="kbd-mobile">Menu</span>
+        </button>
+        <button class="btn btn-sm btn-ghost hide-sm" type="button" data-open-tldr>⚡ 30-sec summary</button>
+        <a class="btn btn-sm btn-primary" href="Dinglun_Zhang_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <a class="status-pill intro" href="#contact">
+            <span class="pulse-dot"></span>
+            Open to new roles <span class="sep">·</span> Los Angeles, CA
+          </a>
+
+          <p class="hero-hello intro">
+            Hi, I'm Dylan — <span class="rotator" id="rotator" aria-live="polite">Frontend Engineer</span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <h1 class="hero-title intro">
+            I build <em class="serif">polished</em> web&nbsp;&amp;&nbsp;mobile products <span class="nowrap">— <span class="hl">at AI&nbsp;speed.</span></span>
+          </h1>
+
+          <p class="hero-sub intro">
+            Software engineer with production experience shipping a multi-platform fintech trading platform in
+            <strong>React, React Native &amp; Next.js</strong>. I pair deep frontend craft with agentic AI workflows to take
+            features from spec to production faster — without cutting corners.
+          </p>
+
+          <div class="hero-ctas intro">
+            <a class="btn btn-primary btn-lg" href="#experience">
+              See my work
+              <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <button class="btn btn-ghost btn-lg" type="button" data-open-tldr>⚡ 30-second summary</button>
+          </div>
+
+          <ul class="hero-stack intro" aria-label="Core stack">
+            <li><span class="chip-dot" style="--c:#61dafb"></span>React.js</li>
+            <li><span class="chip-dot" style="--c:#8be9ff"></span>React Native</li>
+            <li><span class="chip-dot" style="--c:#ffffff"></span>Next.js</li>
+            <li><span class="chip-dot" style="--c:#54c5f8"></span>Flutter</li>
+            <li class="chip-ai"><span class="chip-dot" style="--c:var(--accent)"></span>AI Agents</li>
+          </ul>
+        </div>
+
+        <!-- Hero visual: illustrative device scene -->
+        <div class="hero-visual intro" id="hero-visual" aria-label="Illustration of web and mobile trading interfaces I build">
+          <div class="scene" id="scene">
+            <div class="glow-orb" aria-hidden="true"></div>
+
+            <div class="browser-mock layer" data-depth="18">
+              <div class="browser-bar">
+                <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                <div class="url"><span class="lock">⌁</span> app/<span class="url-locale" id="url-locale">en</span>/markets</div>
+              </div>
+              <div class="browser-body">
+                <div class="bb-head">
+                  <div>
+                    <div class="bb-title" id="bb-title">Live market prices</div>
+                    <div class="bb-sub">Next.js · i18n · live data</div>
+                  </div>
+                  <div class="bb-live"><span class="pulse-dot sm"></span>LIVE</div>
+                </div>
+                <div class="ticker-table" id="ticker-table"></div>
+              </div>
+            </div>
+
+            <div class="phone-mock layer" data-depth="36">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="ph-status"><span>9:41</span><span class="ph-icons">●●● ᯤ ▮</span></div>
+                <div class="ph-head">
+                  <div>
+                    <div class="ph-sym">XAU/USD</div>
+                    <div class="ph-price" id="ph-price">2,384.20</div>
+                  </div>
+                  <div class="ph-chg up" id="ph-chg">+0.42%</div>
+                </div>
+                <canvas class="ph-chart" id="ph-chart" aria-hidden="true"></canvas>
+                <div class="ph-position">
+                  <div class="ph-row"><span>Position</span><b>0.50 · Long</b></div>
+                  <div class="ph-row"><span>Take profit</span><b class="up">2,412.00</b></div>
+                  <div class="ph-row"><span>Stop loss</span><b class="down">2,361.50</b></div>
+                </div>
+                <div class="ph-actions">
+                  <button class="ph-sell" tabindex="-1" type="button">Sell</button>
+                  <button class="ph-buy" tabindex="-1" type="button">Buy</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-chip layer c1" data-depth="54"><span class="fc-ico">⚛</span>Expo · Reanimated</div>
+            <div class="float-chip layer c2" data-depth="48"><span class="fc-ico">⇄</span>WebView ↔ TradingView</div>
+            <div class="float-chip layer c3" data-depth="60"><span class="fc-ico">🌐</span>i18n × 10 languages</div>
+            <div class="float-chip layer c4 accent" data-depth="66"><span class="fc-ico">✦</span>Pair-built with AI agents</div>
+          </div>
+          <p class="visual-caption">Illustrative recreation — the kind of interfaces I ship.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="stats" id="stats">
+          <div class="stat reveal">
+            <dt><span class="count" data-to="3">0</span></dt>
+            <dd>Platforms shipped from one team<br /><span>Web · iOS · Android</span></dd>
+          </div>
+          <div class="stat reveal">
+            <dt><span class="count" data-to="10">0</span></dt>
+            <dd>Languages localized<br /><span>Next.js site redesign</span></dd>
+          </div>
+          <div class="stat reveal">
+            <dt><span class="count" data-to="400" data-suffix="K+">0</span></dt>
+            <dd>Files crawled &amp; deduped<br /><span>for AI model training</span></dd>
+          </div>
+          <div class="stat reveal">
+            <dt><span class="count" data-to="35" data-prefix="+" data-suffix="%">0</span></dt>
+            <dd>Faster DB queries<br /><span>PostgreSQL schema refactor</span></dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>React</span><i>✦</i><span>React Native</span><i>✦</i><span>Next.js</span><i>✦</i><span>Flutter</span><i>✦</i><span>Expo</span><i>✦</i><span>Reanimated</span><i>✦</i><span>Claude Code</span><i>✦</i><span>LangChain</span><i>✦</i><span>Gemini</span><i>✦</i><span>Vertex AI</span><i>✦</i><span>FastAPI</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Docker</span><i>✦</i><span>Unity · C#</span><i>✦</i><span>TradingView</span><i>✦</i>
+          <span>React</span><i>✦</i><span>React Native</span><i>✦</i><span>Next.js</span><i>✦</i><span>Flutter</span><i>✦</i><span>Expo</span><i>✦</i><span>Reanimated</span><i>✦</i><span>Claude Code</span><i>✦</i><span>LangChain</span><i>✦</i><span>Gemini</span><i>✦</i><span>Vertex AI</span><i>✦</i><span>FastAPI</span><i>✦</i><span>PostgreSQL</span><i>✦</i><span>Docker</span><i>✦</i><span>Unity · C#</span><i>✦</i><span>TradingView</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section" id="stack">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>01</span> Core stack</p>
+          <h2>Four frameworks. <em class="serif">Every screen.</em></h2>
+          <p class="section-lede">From pixel-perfect web apps to native-feel mobile trading — I pick the right tool and ship it end to end. Each card below is a live mini-demo. Go ahead, poke it.</p>
+        </header>
+
+        <div class="bento">
+          <!-- React -->
+          <article class="card spot stack-card reveal" id="card-react">
+            <div class="sc-top">
+              <div class="sc-logo" style="--c:#61dafb">
+                <svg viewBox="-12 -12 24 24" width="30" height="30" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.1"><ellipse rx="10.5" ry="4"/><ellipse rx="10.5" ry="4" transform="rotate(60)"/><ellipse rx="10.5" ry="4" transform="rotate(120)"/></g><circle r="2" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <h3>React.js</h3>
+                <p class="sc-tag">Reusable UI architecture &amp; design tokens</p>
+              </div>
+            </div>
+            <p class="sc-body">Built the shared component library and theme-token system behind client portals and admin tools for a multi-tenant trading platform — one source of truth, many brands.</p>
+            <div class="demo demo-tokens" aria-label="Live demo: switch theme tokens">
+              <div class="dt-switch" role="radiogroup" aria-label="Tenant theme">
+                <button type="button" role="radio" aria-checked="true" data-theme="lime" style="--sw:#c8ff3e">Tenant A</button>
+                <button type="button" role="radio" aria-checked="false" data-theme="violet" style="--sw:#8b6cff">Tenant B</button>
+                <button type="button" role="radio" aria-checked="false" data-theme="amber" style="--sw:#ffb547">Tenant C</button>
+              </div>
+              <div class="dt-preview" id="dt-preview">
+                <div class="dt-card">
+                  <div class="dt-row"><span class="dt-avatar"></span><div><b>Wallet</b><small>Available balance</small></div></div>
+                  <div class="dt-amt">$12,480.<span>55</span></div>
+                  <div class="dt-btns"><span class="dt-btn primary">Deposit</span><span class="dt-btn">Transfer</span></div>
+                </div>
+                <code class="dt-code">--color-primary: <span id="dt-hex">#c8ff3e</span>;</code>
+              </div>
+            </div>
+            <ul class="sc-proof"><li>Component library</li><li>Theme tokens</li><li>Responsive layouts</li><li>Admin dashboards</li></ul>
+          </article>
+
+          <!-- React Native -->
+          <article class="card spot stack-card reveal" id="card-rn">
+            <div class="sc-top">
+              <div class="sc-logo" style="--c:#8be9ff">
+                <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="6" y="1.5" width="12" height="21" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.2"/><g transform="translate(12 12)" fill="none" stroke="currentColor" stroke-width=".9"><ellipse rx="4.6" ry="1.8"/><ellipse rx="4.6" ry="1.8" transform="rotate(60)"/><ellipse rx="4.6" ry="1.8" transform="rotate(120)"/></g><circle cx="12" cy="12" r=".9" fill="currentColor"/></svg>
+              </div>
+              <div>
+                <h3>React Native · Expo</h3>
+                <p class="sc-tag">Native-feel trading on iOS &amp; Android</p>
+              </div>
+            </div>
+            <p class="sc-body">Shipped order placement, position management and take-profit / stop-loss editing — with account-specific live quote subscriptions and TradingView charts bridged through WebView messaging.</p>
+            <div class="demo demo-tpsl" aria-label="Live demo: drag to set take profit">
+              <div class="tp-head"><span>Edit take profit</span><b id="tp-val">2,412.00</b></div>
+              <input type="range" min="2390" max="2460" step="0.5" value="2412" id="tp-range" aria-label="Take profit price" />
+              <div class="tp-meta">
+                <span>Est. P/L <b class="up" id="tp-pl">+$1,390.00</b></span>
+                <span>R:R <b id="tp-rr">1 : 1.22</b></span>
+              </div>
+            </div>
+            <ul class="sc-proof"><li>Expo</li><li>Reanimated</li><li>WebView bridge</li><li>Push (FCM)</li><li>2FA</li></ul>
+          </article>
+
+          <!-- Next.js -->
+          <article class="card spot stack-card reveal" id="card-next">
+            <div class="sc-top">
+              <div class="sc-logo" style="--c:#ffffff">
+                <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8.5 16.5V7.5l8 10.5M15.5 7.5v6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <h3>Next.js</h3>
+                <p class="sc-tag">Fast, global, SEO-ready websites</p>
+              </div>
+            </div>
+            <p class="sc-body">Implemented a full website redesign: live market prices, API-backed content, 10-language localization, an optimized mobile navigation and a standardized responsive brand system.</p>
+            <div class="demo demo-i18n" aria-label="Live demo: localization">
+              <div class="i18n-route">/<span id="i18n-code">en</span>/markets</div>
+              <div class="i18n-text" id="i18n-text">Trade the world's markets</div>
+              <div class="i18n-bar"><span id="i18n-progress"></span></div>
+              <div class="i18n-langs" id="i18n-langs"></div>
+            </div>
+            <ul class="sc-proof"><li>API-backed content</li><li>i18n × 10</li><li>Live data</li><li>Mobile-first</li></ul>
+          </article>
+
+          <!-- Flutter -->
+          <article class="card spot stack-card reveal" id="card-flutter">
+            <div class="sc-top">
+              <div class="sc-logo" style="--c:#54c5f8">
+                <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M14.2 1.5 3.6 12.1l3.3 3.3L20.8 1.5z" fill="currentColor"/><path d="M14.2 11.2 8.4 17l5.8 5.8h6.6l-5.8-5.8 5.8-5.8z" fill="currentColor" opacity=".75"/></svg>
+              </div>
+              <div>
+                <h3>Flutter · Dart</h3>
+                <p class="sc-tag">One codebase, pixel-consistent everywhere</p>
+              </div>
+            </div>
+            <p class="sc-body">Cross-platform apps from a single Dart codebase — composable widget trees, predictable state management and smooth, consistent UI across iOS, Android and the web.</p>
+            <div class="demo demo-tree" aria-label="Illustration: Flutter widget tree">
+              <div class="tree" id="flutter-tree">
+                <div class="node n0">MaterialApp</div>
+                <div class="branch">
+                  <div class="node n1">Scaffold</div>
+                  <div class="branch">
+                    <div class="node n2">AppBar</div>
+                    <div class="node n2">ListView.builder</div>
+                    <div class="node n2 hot">FloatingActionButton</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tree-hint"><span class="pulse-dot sm"></span> hot reload · 60fps</div>
+            </div>
+            <ul class="sc-proof"><li>Widgets</li><li>State mgmt</li><li>Material / Cupertino</li><li>Animations</li></ul>
+          </article>
+        </div>
+
+        <div class="also reveal">
+          <p class="also-label">Also fluent in</p>
+          <ul class="also-list">
+            <li>JavaScript</li><li>HTML / CSS</li><li>Vue.js</li><li>REST APIs</li><li>Real-time price feeds</li><li>TradingView</li><li>Firebase Cloud Messaging</li>
+            <li>Python</li><li>FastAPI</li><li>Java</li><li>Spring Boot</li><li>C++</li><li>C#</li><li>SQL</li><li>PostgreSQL</li><li>MySQL</li><li>SQLAlchemy</li>
+            <li>Docker</li><li>CI/CD</li><li>Git</li><li>Unity</li><li>Blender</li><li>Cinema 4D</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI ============ -->
+    <section class="section section-ai" id="ai">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>02</span> AI-native engineering</p>
+          <h2>I don't just use AI. <em class="serif">I orchestrate it.</em></h2>
+          <p class="section-lede">I run AI coding agents like a well-briefed team: I write the spec, set the guardrails, review every diff and own the result. The outcome is senior-level output at startup speed — and I've built LLM products too, not just used them.</p>
+        </header>
+
+        <div class="ai-grid">
+          <div class="terminal reveal" id="terminal" aria-label="Illustrative AI agent coding session">
+            <div class="term-bar">
+              <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+              <span class="term-title">~/trading-app — agent session</span>
+              <button class="term-replay" type="button" id="term-replay" aria-label="Replay session">↻ replay</button>
+            </div>
+            <pre class="term-body" id="term-body" aria-live="off"></pre>
+          </div>
+
+          <div class="ai-cards">
+            <article class="card spot ai-card reveal">
+              <div class="ai-ico">⌘</div>
+              <h3>Agentic coding</h3>
+              <p>Claude Code, Cursor &amp; Copilot as force-multipliers — scoped tasks, plan-first prompting, test-gated changes and human review on every diff.</p>
+            </article>
+            <article class="card spot ai-card reveal">
+              <div class="ai-ico">✦</div>
+              <h3>Agent Skills &amp; context engineering</h3>
+              <p>I author reusable Skills and project rules so agents follow the team's conventions, design tokens and test patterns — consistent output, not one-off luck.</p>
+            </article>
+            <article class="card spot ai-card reveal">
+              <div class="ai-ico">◎</div>
+              <h3>LLM product engineering</h3>
+              <p>Shipped Gemini + LangChain + Vertex AI tools generating quizzes and flashcards for <b>500+ users</b>, with MapReduce summarization for long documents.</p>
+            </article>
+            <article class="card spot ai-card reveal">
+              <div class="ai-ico">⛁</div>
+              <h3>Data for AI</h3>
+              <p>Designed a resumable, deduplicating crawling pipeline that processed <b>400,000+ files</b> and metadata to feed large-scale model training.</p>
+            </article>
+          </div>
+        </div>
+
+        <ol class="pipeline reveal" aria-label="My AI-assisted delivery workflow">
+          <li><span>01</span>Spec &amp; constraints</li>
+          <li><span>02</span>Agent plans</li>
+          <li><span>03</span>Implement</li>
+          <li><span>04</span>Tests gate</li>
+          <li><span>05</span>I review</li>
+          <li class="ship"><span>06</span>Ship 🚀</li>
+        </ol>
+
+        <p class="ai-footnote reveal">
+          <span class="hl-box">AI multiplies fundamentals — it doesn't replace them.</span>
+          Want proof I have the fundamentals? <a href="#games">Scroll to the games I built entirely by hand, before AI coding tools existed ↓</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>03</span> Experience</p>
+          <h2>Shipped in production, <em class="serif">used by real people.</em></h2>
+        </header>
+
+        <div class="timeline">
+          <article class="job card spot featured reveal">
+            <div class="job-side">
+              <span class="job-date">Aug 2025 — Oct 2026</span>
+              <span class="job-loc">Full-time</span>
+            </div>
+            <div class="job-main">
+              <div class="job-head">
+                <h3>Software Engineer <span class="at">@ BCR</span></h3>
+                <span class="job-badge">Fintech · Trading platform</span>
+              </div>
+              <p class="job-summary">Built client portals, admin tools and mobile apps for a multi-tenant financial trading platform — across <b>web, iOS and Android</b>.</p>
+              <ul class="job-points">
+                <li><b>Trading on mobile:</b> React Native / Expo interfaces for order placement, position management and TP/SL editing; account-specific quote subscriptions and TradingView charts via WebView messaging.</li>
+                <li><b>Design system:</b> reusable UI components and theme tokens for responsive web &amp; mobile; unified IB and sales workflows (client management, rebates, referrals) across platforms.</li>
+                <li><b>Money movement:</b> deposit, withdrawal and transfer flows tailored to regional and tenant requirements, with identity-document verification and reusable two-factor authentication across client and admin apps.</li>
+                <li><b>Web redesign:</b> Next.js website with live market prices, API-backed content and 10-language localization; optimized mobile navigation and standardized brand styling.</li>
+                <li><b>End-to-end ownership:</b> account onboarding, wallet management and partner reporting, from UI to API integration.</li>
+              </ul>
+              <ul class="tags"><li>React</li><li>React Native</li><li>Expo</li><li>Next.js</li><li>Reanimated</li><li>TradingView</li><li>FCM</li><li>i18n</li><li>2FA / KYC</li></ul>
+            </div>
+          </article>
+
+          <article class="job card spot reveal">
+            <div class="job-side">
+              <span class="job-date">May — Sep 2024</span>
+              <span class="job-loc">Internship</span>
+            </div>
+            <div class="job-main">
+              <div class="job-head">
+                <h3>Software Engineer Intern <span class="at">@ Radical AI</span></h3>
+                <span class="job-badge ai">AI · EdTech</span>
+              </div>
+              <ul class="job-points">
+                <li>Built AI educational tools with <b>Google Gemini, LangChain and Vertex AI</b>, generating topic-specific quizzes and flashcards for <b>500+ users</b>.</li>
+                <li>Implemented MapReduce text summarization; used Docker and CI/CD pipelines to keep development and deployment environments consistent.</li>
+              </ul>
+              <ul class="tags"><li>Gemini</li><li>LangChain</li><li>Vertex AI</li><li>Python</li><li>Docker</li><li>CI/CD</li></ul>
+            </div>
+          </article>
+
+          <article class="job card spot reveal">
+            <div class="job-side">
+              <span class="job-date">Jun — Sep 2023</span>
+              <span class="job-loc">Internship · Beijing</span>
+            </div>
+            <div class="job-main">
+              <div class="job-head">
+                <h3>Backend Software Engineer Intern <span class="at">@ Pai Technology</span></h3>
+                <span class="job-badge">Data · AI infra</span>
+              </div>
+              <ul class="job-points">
+                <li>Designed a Python / Scrapy crawling service processing <b>400,000+ files</b> and metadata for AI training — with error handling, resumable crawling and deduplication.</li>
+                <li>Refactored PostgreSQL schemas with SQLAlchemy, improving query performance by <b>35%</b> and supporting automated daily updates.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>Scrapy</li><li>PostgreSQL</li><li>SQLAlchemy</li></ul>
+            </div>
+          </article>
+
+          <article class="job card spot reveal">
+            <div class="job-side">
+              <span class="job-date">Jul — Sep 2022</span>
+              <span class="job-loc">Competition</span>
+            </div>
+            <div class="job-main">
+              <div class="job-head">
+                <h3>Game Developer <span class="at">@ China University Students Game Awards (CUSGA)</span></h3>
+                <span class="job-badge game">Game dev</span>
+              </div>
+              <ul class="job-points">
+                <li>Developed a stochastic, tail-recursive algorithm for <b>procedural level-map generation</b>.</li>
+                <li>Rigged a complex non-humanoid model, tuned vertex weights for natural motion and refined animation with inverse kinematics on end joints.</li>
+              </ul>
+              <ul class="tags"><li>Unity</li><li>C#</li><li>Procedural generation</li><li>Rigging · IK</li></ul>
+            </div>
+          </article>
+
+          <article class="job card spot reveal">
+            <div class="job-side">
+              <span class="job-date">Apr — Aug 2022</span>
+              <span class="job-loc">Internship</span>
+            </div>
+            <div class="job-main">
+              <div class="job-head">
+                <h3>Frontend Software Engineer Intern <span class="at">@ Huaqiao Pharmaceuticals</span></h3>
+                <span class="job-badge">HealthTech</span>
+              </div>
+              <ul class="job-points">
+                <li>Developed responsive React, Bootstrap and jQuery applications for clinical program information, supporting access for <b>2,500+ patients</b> across hundreds of hospitals.</li>
+              </ul>
+              <ul class="tags"><li>React</li><li>Bootstrap</li><li>jQuery</li><li>Responsive UI</li></ul>
+            </div>
+          </article>
+
+          <article class="job card spot reveal">
+            <div class="job-side">
+              <span class="job-date">Aug — Dec 2021</span>
+              <span class="job-loc">Research</span>
+            </div>
+            <div class="job-main">
+              <div class="job-head">
+                <h3>Research Assistant <span class="at">@ Rutgers University</span></h3>
+                <span class="job-badge">Physics · Simulation</span>
+              </div>
+              <ul class="job-points">
+                <li>Refined <b>GJK/EPA collision detection</b> and extended a physics engine from 2D to 3D using hierarchical bounding volumes.</li>
+                <li>Built unit and integration tests with <b>85%+ code coverage</b> for real-time simulation scenarios.</li>
+              </ul>
+              <ul class="tags"><li>C#</li><li>Unity</li><li>Computational geometry</li><li>Testing</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAMES ============ -->
+    <section class="section section-games" id="games">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>04</span> Pre-AI era <span class="badge-noai">0% AI-generated</span></p>
+          <h2>Built by hand, <em class="serif">before AI could.</em></h2>
+          <p class="section-lede">Years before LLMs could write a for-loop, I was designing and shipping games solo in Unity &amp; C# — modeling and rigging characters, writing NPC behavior trees, configuring render pipelines and simulating physics. Every line of code: mine. That's the foundation my AI-accelerated work stands on — and why I obsess over 60fps, motion and feel in every interface.</p>
+        </header>
+
+        <div class="filters reveal" role="tablist" aria-label="Filter projects">
+          <button type="button" class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button type="button" class="filter" data-filter="game" role="tab" aria-selected="false">Games</button>
+          <button type="button" class="filter" data-filter="sim" role="tab" aria-selected="false">AI &amp; Simulation</button>
+        </div>
+
+        <div class="games-grid" id="games-grid">
+          <a class="game-card reveal" data-cat="game" href="https://youtu.be/zHFh3RfH9ok" target="_blank" rel="noopener">
+            <div class="gc-media"><img src="assets/img/six_feet_deep.jpg" alt="Six Feet Deep — cyberpunk action game with custom HUD" loading="lazy" width="1280" height="720" /><span class="gc-play">▶ Watch</span></div>
+            <div class="gc-info">
+              <h3>Six Feet Deep</h3>
+              <p>Cyberpunk third-person action. Custom sci-fi HUD, enemy waves, minimap and a fully rigged, animated hero.</p>
+              <ul class="tags sm"><li>Unity</li><li>C#</li><li>Rigging</li><li>Game UI</li></ul>
+            </div>
+          </a>
+          <a class="game-card reveal" data-cat="game" href="https://youtu.be/i0tZfTzdGaQ" target="_blank" rel="noopener">
+            <div class="gc-media"><img src="assets/img/drowning_mirage.jpg" alt="Drowning Mirage — neon cyberpunk city title screen" loading="lazy" width="1280" height="720" /><span class="gc-play">▶ Watch</span></div>
+            <div class="gc-info">
+              <h3>Drowning Mirage</h3>
+              <p>Neon-soaked cyberpunk cityscape — lighting, post-processing and render-pipeline tuning for mood and atmosphere.</p>
+              <ul class="tags sm"><li>Unity</li><li>Render pipeline</li><li>Level design</li></ul>
+            </div>
+          </a>
+          <a class="game-card reveal" data-cat="game" href="https://play.unity.com/mg/other/roam-2100s" target="_blank" rel="noopener">
+            <div class="gc-media"><img src="assets/img/roam_2100s.jpg" alt="ROAM: 2100S — low-poly spaceship title screen" loading="lazy" width="1280" height="720" /><span class="gc-play">▶ Play in browser</span></div>
+            <div class="gc-info">
+              <h3>ROAM: 2100S</h3>
+              <p>Low-poly space adventure — custom-modeled ship and astronaut, flight controls and physics. Playable on the web.</p>
+              <ul class="tags sm"><li>Unity WebGL</li><li>3D modeling</li><li>Physics</li></ul>
+            </div>
+          </a>
+          <a class="game-card reveal" data-cat="game" href="https://play.unity.com/mg/other/rolling-ball-390" target="_blank" rel="noopener">
+            <div class="gc-media"><img src="assets/img/rolling_balls.jpg" alt="Rolling Balls — split-screen low-poly multiplayer game" loading="lazy" width="1280" height="720" /><span class="gc-play">▶ Play in browser</span></div>
+            <div class="gc-info">
+              <h3>Rolling Balls</h3>
+              <p>Split-screen local multiplayer race to collect cubes against the clock. Tight controls, physics and game feel.</p>
+              <ul class="tags sm"><li>Unity</li><li>Multiplayer</li><li>Physics</li></ul>
+            </div>
+          </a>
+          <a class="game-card reveal" data-cat="sim" href="https://play.unity.com/mg/other/b1-crowd-simlulator" target="_blank" rel="noopener">
+            <div class="gc-media"><img src="assets/img/crowd-simulator.jpg" alt="Crowd Simulator — agents navigating mazes and lava levels" loading="lazy" width="1280" height="720" /><span class="gc-play">▶ Play in browser</span></div>
+            <div class="gc-info">
+              <h3>Crowd Simulator</h3>
+              <p>Multi-agent crowd navigation through mazes, hazards and dynamic obstacles across multiple levels.</p>
+              <ul class="tags sm"><li>Game AI</li><li>Steering</li><li>Navigation</li></ul>
+            </div>
+          </a>
+          <a class="game-card reveal" data-cat="sim" href="https://youtube.com/playlist?list=PLP37BzbLT93HPT_pv3koeefoJD1i175lx" target="_blank" rel="noopener">
+            <div class="gc-media"><img src="assets/img/pathfinding_agents.jpg" alt="Pathfinding agents walking through a colorful isometric world" loading="lazy" width="1280" height="720" /><span class="gc-play">▶ Watch</span></div>
+            <div class="gc-info">
+              <h3>Pathfinding Agents</h3>
+              <p>Autonomous agents planning routes through a stylized isometric world — pathfinding and behavior systems.</p>
+              <ul class="tags sm"><li>Pathfinding</li><li>Behavior trees</li><li>Unity</li></ul>
+            </div>
+          </a>
+        </div>
+
+        <ul class="craft reveal" aria-label="Game development skills">
+          <li>Humanoid rigging &amp; animation</li><li>NPC behavior trees</li><li>Render pipelines</li><li>Physics simulation</li><li>Procedural generation</li><li>Inverse kinematics</li><li>Blender · Cinema 4D</li>
+        </ul>
+
+        <!-- Arcade -->
+        <div class="arcade reveal" id="arcade">
+          <div class="arcade-copy">
+            <p class="eyebrow small"><span>▶</span> Insert coin</p>
+            <h3>Take a 30-second break: <span class="hl">Bug Blaster</span></h3>
+            <p>Production bugs are falling. Move to aim (mouse, touch or ← →), shots fire automatically. Grab the <b class="accent">✦ AI</b> power-up for triple fire — just like real life.</p>
+            <ul class="arcade-keys">
+              <li><kbd>←</kbd><kbd>→</kbd> or mouse — move</li>
+              <li><kbd>P</kbd> — pause</li>
+            </ul>
+          </div>
+          <div class="cabinet">
+            <canvas id="game" width="720" height="450" tabindex="0" aria-label="Bug Blaster mini-game. Press Enter or click to start."></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>05</span> AI &amp; web projects</p>
+          <h2>Side projects &amp; <em class="serif">experiments.</em></h2>
+        </header>
+
+        <div class="proj-grid">
+          <a class="proj card spot reveal" href="https://www.loom.com/share/59f33fff1b0649ddb7b5f11d9c9a6fd9" target="_blank" rel="noopener">
+            <div class="proj-media"><img src="assets/img/gemini-quizify-certificate.jpg" alt="Gemini Quizify certificate" loading="lazy" width="1280" height="748" /></div>
+            <div class="proj-body">
+              <div class="proj-top"><h3>Gemini Quizify</h3><span class="arrow">↗</span></div>
+              <p>Upload PDFs, pick a topic, get an interactive AI-generated quiz. Vertex AI embeddings + Chroma vector store for retrieval, LangChain + Gemini for generation, Streamlit UI.</p>
+              <ul class="tags sm"><li>RAG</li><li>Vertex AI</li><li>LangChain</li><li>Chroma</li><li>Streamlit</li></ul>
+            </div>
+          </a>
+          <a class="proj card spot reveal" href="https://youtu.be/z3Sjdn88IYw" target="_blank" rel="noopener">
+            <div class="proj-media"><img src="assets/img/gpt-tts.jpg" alt="GPT-TTS interface" loading="lazy" width="1280" height="720" /></div>
+            <div class="proj-body">
+              <div class="proj-top"><h3>GPT-TTS</h3><span class="arrow">↗</span></div>
+              <p>RESTful service that turns GPT-3.5 Turbo output into lifelike speech with Azure Text-to-Speech — tunable voice, pitch and style.</p>
+              <ul class="tags sm"><li>OpenAI API</li><li>Azure TTS</li><li>REST API</li></ul>
+            </div>
+          </a>
+          <a class="proj card spot reveal" href="https://witsqua.com/" target="_blank" rel="noopener">
+            <div class="proj-media"><img src="assets/img/witsqua_website.jpg" alt="WITSQUA website with glowing 3D cube" loading="lazy" width="1280" height="720" /></div>
+            <div class="proj-body">
+              <div class="proj-top"><h3>WITSQUA — Official site</h3><span class="arrow">↗</span></div>
+              <p>Immersive brand website with a glowing 3D hero and motion-driven layout.</p>
+              <ul class="tags sm"><li>Web</li><li>3D</li><li>Motion</li></ul>
+            </div>
+          </a>
+        </div>
+
+        <div class="repo-list reveal">
+          <a class="repo" href="https://github.com/dinglunz/gemini-dynamo" target="_blank" rel="noopener"><span class="repo-name">gemini-dynamo</span><span class="repo-desc">DynamoCards — full-stack app that turns lengthy YouTube transcripts into organized study flashcards with Gemini.</span><span class="arrow">↗</span></a>
+          <a class="repo" href="https://github.com/dinglunz/gemini-explorer" target="_blank" rel="noopener"><span class="repo-name">gemini-explorer</span><span class="repo-desc">ReX — a friendly conversational assistant powered by Google Gemini.</span><span class="arrow">↗</span></a>
+          <a class="repo" href="https://github.com/dinglunz/CV-for-American-Sign-Language" target="_blank" rel="noopener"><span class="repo-name">CV-for-American-Sign-Language</span><span class="repo-desc">ASL recognition using machine learning and computer vision.</span><span class="arrow">↗</span></a>
+          <a class="repo" href="https://github.com/dinglunz/RTS-Game-Simulation" target="_blank" rel="noopener"><span class="repo-name">RTS-Game-Simulation</span><span class="repo-desc">Simulates game units fighting on a 2D plane.</span><span class="arrow">↗</span></a>
+          <a class="repo" href="https://github.com/dinglunz" target="_blank" rel="noopener"><span class="repo-name">github.com/dinglunz</span><span class="repo-desc">More on GitHub</span><span class="arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / EDUCATION ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-frame">
+            <img src="assets/img/my-avatar.jpg" alt="Portrait of Dinglun (Dylan) Zhang" loading="lazy" width="622" height="640" />
+          </div>
+          <div class="photo-tag">Dinglun (Dylan) Zhang · Los Angeles</div>
+        </div>
+        <div class="about-copy">
+          <header class="section-head reveal">
+            <p class="eyebrow"><span>06</span> About</p>
+            <h2>Game-dev instincts, <em class="serif">product-engineer discipline.</em></h2>
+          </header>
+          <p class="reveal">I started in games — physics engines, NPC AI, rigged characters — where every millisecond and every frame of animation matters. Today I bring that same obsession with <b>performance, motion and feel</b> to product engineering: interfaces that feel fast, look sharp and hold up under real users and real money.</p>
+          <p class="reveal">I'm happiest owning features end to end — from the design token to the API call to the App Store build — and I use AI agents to move faster while staying accountable for every line that ships.</p>
+
+          <div class="edu">
+            <div class="edu-item card reveal">
+              <div class="edu-logo">USC</div>
+              <div>
+                <h3>University of Southern California</h3>
+                <p>M.S. Computer Engineering · <b>GPA 3.78</b></p>
+              </div>
+              <span class="edu-date">2025</span>
+            </div>
+            <div class="edu-item card reveal">
+              <div class="edu-logo ru">RU</div>
+              <div>
+                <h3>Rutgers University – New Brunswick</h3>
+                <p>B.S. Computer Science · <b>cum laude</b> · GPA 3.67</p>
+              </div>
+              <span class="edu-date">2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow"><span>07</span> Contact</p>
+          <h2 class="contact-title">Let's build <em class="serif">what's next.</em></h2>
+          <p class="contact-sub">Hiring for frontend, full-stack, AI or game engineering? Let's talk — I'd love to hear what you're building.</p>
+          <div class="contact-actions">
+            <button class="email-btn" type="button" id="copy-email" data-email="dinglunz@usc.edu">
+              <span class="email-text">dinglunz@usc.edu</span>
+              <span class="email-hint">Click to copy</span>
+            </button>
+          </div>
+          <div class="contact-links">
+            <a class="btn btn-primary btn-lg" href="mailto:dinglunz@usc.edu?subject=Opportunity%20for%20Dylan">Email me</a>
+            <a class="btn btn-ghost btn-lg" href="https://www.linkedin.com/in/dinglun-zhang" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a class="btn btn-ghost btn-lg" href="https://github.com/dinglunz" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="btn btn-ghost btn-lg" href="Dinglun_Zhang_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Dinglun (Dylan) Zhang</span>
+      <span class="footer-mid">Hand-tuned HTML, CSS &amp; vanilla JS — zero dependencies. Designed by me, pair-programmed with AI agents.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ COMMAND PALETTE ============ -->
+  <div class="overlay" id="palette" role="dialog" aria-modal="true" aria-label="Command menu" hidden>
+    <div class="palette">
+      <div class="palette-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" id="palette-input" placeholder="Type a command or search…" autocomplete="off" spellcheck="false" aria-label="Search commands" />
+        <kbd>esc</kbd>
+      </div>
+      <ul class="palette-list" id="palette-list" role="listbox"></ul>
+      <div class="palette-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> select</span></div>
+    </div>
+  </div>
+
+  <!-- ============ TL;DR MODAL ============ -->
+  <div class="overlay" id="tldr" role="dialog" aria-modal="true" aria-labelledby="tldr-title" hidden>
+    <div class="tldr">
+      <button class="tldr-close" type="button" data-close aria-label="Close">✕</button>
+      <p class="eyebrow small"><span>⚡</span> For recruiters &amp; hiring managers</p>
+      <h2 id="tldr-title">Dylan in 30 seconds</h2>
+      <dl class="tldr-list">
+        <div><dt>Target roles</dt><dd>Frontend · Full-Stack · AI Engineer · Game Developer</dd></div>
+        <div><dt>Experience</dt><dd>1+ year full-time SWE in fintech (web + iOS + Android) + 3 engineering internships (AI, backend, frontend)</dd></div>
+        <div><dt>Core stack</dt><dd><b>React.js · React Native / Expo · Next.js · Flutter</b></dd></div>
+        <div><dt>AI</dt><dd>Agentic coding (Claude Code, Agent Skills), LLM apps with Gemini, LangChain, Vertex AI</dd></div>
+        <div><dt>Also</dt><dd>Python / FastAPI, Java / Spring Boot, PostgreSQL, Docker, Unity / C#</dd></div>
+        <div><dt>Education</dt><dd>M.S. Computer Engineering, USC (3.78) · B.S. Computer Science, Rutgers (cum laude)</dd></div>
+        <div><dt>Location</dt><dd>Los Angeles, CA</dd></div>
+      </dl>
+      <div class="tldr-actions">
+        <a class="btn btn-primary" href="mailto:dinglunz@usc.edu?subject=Opportunity%20for%20Dylan">Email Dylan</a>
+        <a class="btn btn-ghost" href="Dinglun_Zhang_Resume.pdf" target="_blank" rel="noopener">Résumé PDF</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/dinglun-zhang" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/main.js?v=7" defer></script>
+</body>
+</html>
